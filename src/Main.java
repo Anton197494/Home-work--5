@@ -13,6 +13,10 @@ public class Main {
         task3(1584);
         task3(2);
         task3(2021);
+        task4(10,1);
+        task4(95, 1);
+        task4(58, 1);
+
 
 
     }
@@ -67,4 +71,16 @@ public class Main {
 
 
     }
-    }
+    public static void task4(int deliveryDistance, int deliveryDays){
+        if (deliveryDistance<=20) {
+            System.out.println("Потребуется дней: " +  deliveryDays);
+        } else if (deliveryDistance<=60){ deliveryDays +=1;
+                System.out.println("Потребуется дней: " +  deliveryDays);
+        } else if (deliveryDistance<=100){ deliveryDays +=2;
+            System.out.println("Потребуется дней: " +  deliveryDays);
+        }else {
+            System.out.println("Доставки нет");
+        }
+
+
+    }}
